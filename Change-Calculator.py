@@ -38,9 +38,9 @@ def totalpaid(cost,paid):
         pennies = int(remaining_change/.01)
         remaining_change = round(remaining_change - (pennies *.01),2)
         
-    print("The total was ${}. The customer paid ${}. \n\n Amount Due: \n Dollars: {} \n Quarters: {} \n Dimes: {} \n Nickels: {} \n Pennies: {} ".format(cost, paid, dollars, quarters, dimes, nickels, pennies))
+    print(f"The total was ${cost}. The customer paid ${paid}. \n\n Amount Due: \n Dollars: {dollars} \n Quarters: {quarters} \n Dimes: {dimes} \n Nickels: {nickels} \n Pennies: {pennies} ")
  
-    
+
 #    
 #Asks for cost and amount paid
 #Removes leading dollar sign, if any, to convert input to float
